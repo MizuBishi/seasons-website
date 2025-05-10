@@ -7,10 +7,9 @@
   --color-mint: #e3ffb2;
   --color-text: #333;
   --color-background: #fff;
-  --color-background-colored: #D2E5E7
-
-  --base-padding: 3vw;
+  --color-background-colored: #d2e5e7;
   --section-spacing: 6rem;
+  --site-padding: 3vw;
 }
 
 * {
@@ -22,15 +21,19 @@
 body {
   font-family: "Heebo", sans-serif;
   color: var(--color-text);
-  line-height: 1.6;
   background-color: var(--color-background-colored);
+}
+
+main {
+  padding: 0 var(--site-padding);
+  margin-top: 5rem;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vw 3vw;
+  padding: 1.5vw var(--site-padding);
   position: fixed;
   top: 0;
   left: 0;
@@ -49,13 +52,56 @@ body {
   }
 }
 
-.main {
-  padding: 0 var(--base-padding);
+.hero {
+  margin-bottom: 10rem;
+  margin-top: 12rem;
 
-  > .title {
-    font-family: "Heebo", sans-serif;
-    font-size: 5vw;
-    color: var(--color-base);
+  > .upper {
+    position: relative;
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+
+    > .title {
+      position: absolute;
+      top: 20%;
+      left: 2vw;
+      font-size: 8vw;
+      max-width: 50vw;
+      line-height: 1;
+      color: var(--color-base);
+      margin-bottom: 5rem;
+    }
+
+    > .image {
+      width: 50%;
+      height: auto;
+      margin-left: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    // > .imageright {
+    //   position: absolute;
+    //   top: 80%;
+    //   right: -10%;
+    //   width: 40%;
+    //   height: auto;
+
+    //   img {
+    //     width: 100%;
+    //   }
+    // }
+  }
+
+  .subtitle {
+  }
+
+  .description {
   }
 }
 
@@ -76,33 +122,6 @@ body {
   &:hover {
     background: var(--color-base);
     color: var(--color-mint);
-  }
-}
-
-main {
-  margin-top: 5rem;
-}
-
-.hero {
-  padding: calc(var(--section-spacing) * 2) var(--base-padding);
-  text-align: center;
-
-  .title {
-    font-size: 5vw;
-    color: var(--color-base);
-    margin-bottom: 1rem;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-
-  .description {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
   }
 }
 
