@@ -21,4 +21,4 @@ import { setupCounter } from "./counter.js";
 //   </div>
 // `;
 
-setupCounter(document.querySelector("#counter"));
+// setupCounter(document.querySelector("#counter"));
