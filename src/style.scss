@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-base: rgb(0, 73, 79);
+  --color-lila: #b3a2e6;
+  --color-white: #fff;
+  --color-mint: #e3ffb2;
+
+  --base-padding: 3vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--base-padding);
+
+  > .logo {
+    height: 3rem;
+
+    > .image {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+.main {
+  padding: 0 var(--base-padding);
+
+  > .title {
+    font-family: "Heebo", sans-serif;
+    font-size: 5vw;
+    color: var(--color-base);
+  }
+}
+
+.cta-btn {
+  background: var(--color-lila);
+  color: var(--color-white);
+  font-family: "Heebo", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 200ms, color 200ms;
+  display: block;
+
+  &:hover {
+    background: var(--color-base);
+    color: var(--color-mint);
+  }
+}
