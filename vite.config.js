@@ -17,8 +17,10 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
-    modules: {
-      localsConvention: "camelCase",
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/style.scss";`,
+      },
     },
   },
   publicDir: "src/assets",
