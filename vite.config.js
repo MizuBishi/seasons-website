@@ -17,6 +17,9 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
+    modules: {
+      localsConvention: "camelCase",
+    },
   },
   publicDir: "src/assets",
 });
