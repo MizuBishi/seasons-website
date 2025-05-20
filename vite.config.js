@@ -18,4 +18,5 @@ export default defineConfig({
   css: {
     devSourcemap: true,
   },
+  publicDir: "src/assets",
 });
