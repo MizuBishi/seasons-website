@@ -9,11 +9,6 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "./src/style.scss";`,
-      },
-    },
   },
   publicDir: "src/assets",
 });

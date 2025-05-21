@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 
 // Header background on scroll
 const header = document.querySelector(".header");
