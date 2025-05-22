@@ -4,12 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "sass": "sass src/style.scss:style.css --watch",
+    "sass:build": "sass src/style.scss:style.css --style compressed"
   },
   "devDependencies": {
-    "sass": "^1.87.0",
-    "vite": "^6.3.5"
+    "sass": "^1.87.0"
   }
 }
