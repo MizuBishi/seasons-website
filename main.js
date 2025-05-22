@@ -1,15 +1,18 @@
 // Header background on scroll
-const header = document.querySelector(".header");
-let lastScroll = 0;
+const headers = document.querySelectorAll(".header");
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
+headers.forEach((header) => {
+  let lastScroll = 0;
 
-  if (currentScroll > 50) {
-    header.classList.add("header--scrolled");
-  } else {
-    header.classList.remove("header--scrolled");
-  }
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
 
-  lastScroll = currentScroll;
+    if (currentScroll > 50) {
+      header.classList.add("header--scrolled");
+    } else {
+      header.classList.remove("header--scrolled");
+    }
+
+    lastScroll = currentScroll;
+  });
 });
