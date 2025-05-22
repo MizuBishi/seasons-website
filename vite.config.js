@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/seasons-website/",
+  base: "/seasons-website",
   build: {
     outDir: "dist",
     assetsDir: "assets",
