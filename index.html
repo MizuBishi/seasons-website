@@ -7,15 +7,82 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>seasons</title>
+    <title>home | seasons.</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="home | seasons." />
+    <meta
+      name="description"
+      content="Mit unserer seasons-App kannst du dein Befinden über den gesamten Zyklus hinweg verfolgen. Basierend auf wissenschaftlichen Kenntnissen lernst du deinen Zyklus besser kennen und kannst deine Energie punktgenau einteilen, damit du im richtigen Moment Pause machst oder Vollgas gibst."
+    />
+    <meta
+      name="keywords"
+      content="perioden-tracker, zyklus-tracking, frauen-gesundheit, energie-management, google calendar integration, seasons app"
+    />
+    <meta name="author" content="seasons." />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="German" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="CH" />
+    <meta name="geo.placename" content="Zürich" />
+    <meta name="geo.position" content="47.3769;8.5417" />
+    <meta name="ICBM" content="47.3769, 8.5417" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.getseasons.ch" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.getseasons.ch" />
+    <meta property="og:title" content="home | seasons." />
+    <meta
+      property="og:description"
+      content="Mit unserer seasons-App kannst du dein Befinden über den gesamten Zyklus hinweg verfolgen. Basierend auf wissenschaftlichen Kenntnissen lernst du deinen Zyklus besser kennen und kannst deine Energie punktgenau einteilen."
+    />
+    <meta
+      property="og:image"
+      content="https://www.getseasons.ch/assets/seasons-logo.png"
+    />
+    <meta property="og:site_name" content="seasons." />
+    <meta property="og:locale" content="de_CH" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.getseasons.ch" />
+    <meta name="twitter:title" content="home | seasons." />
+    <meta
+      name="twitter:description"
+      content="Mit unserer seasons-App kannst du dein Befinden über den gesamten Zyklus hinweg verfolgen. Basierend auf wissenschaftlichen Kenntnissen lernst du deinen Zyklus besser kennen."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.getseasons.ch/assets/seasons-logo.png"
+    />
   </head>
   <body>
-    <header class="header">
+    <header class="header" role="banner">
       <div class="logo">
-        <a href="/index.html">
-          <img src="seasons-logo.png" class="image" alt="Seasons Logo" />
+        <a href="index.html" aria-label="Zur Startseite">
+          <img
+            src="seasons-logo.png"
+            class="image"
+            alt="seasons Logo"
+            width="120"
+            height="40"
+          />
         </a>
       </div>
       <a
@@ -23,19 +90,19 @@
         target="_blank"
         rel="noopener"
         class="cta-btn"
-        aria-label="Download the Seasons App"
+        aria-label="Download the seasons App"
         >Hol dir die App</a
       >
     </header>
 
-    <main>
-      <section class="hero">
+    <main role="main">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="upper">
-          <h1 class="title">Your seasons matter.</h1>
+          <h1 id="hero-title" class="title">Your seasons matter.</h1>
           <div class="image">
             <img
               src="jernej-graj-rlNibgIqi4o-unsplash.jpg"
-              alt="Woman looking at her phone while sitting in nature"
+              alt="Frau schaut auf ihr Smartphone während sie in der Natur sitzt"
             />
           </div>
         </div>
@@ -50,11 +117,18 @@
           </p>
         </div>
         <div class="videocontainer">
-          <video class="video" src="seasons-video-small.mp4" controls></video>
+          <video
+            class="video"
+            src="seasons-video-small.mp4"
+            controls
+            preload="metadata"
+            aria-label="Demo-Video der seasons App"
+          ></video>
         </div>
       </section>
 
-      <section class="features">
+      <section class="features" aria-labelledby="features-title">
+        <h2 id="features-title" class="visually-hidden">Hauptfunktionen</h2>
         <div class="feature">
           <div class="feature-content">
             <h2>LERNE DEINEN ZYKLUS KENNEN</h2>
@@ -70,7 +144,8 @@
           <div class="feature-image">
             <img
               src="app-screens-3.png"
-              alt="Screenshot of the Seasons app showing cycle tracking features"
+              alt="Screenshot der seasons App mit Zyklus-Tracking-Funktionen"
+              loading="lazy"
             />
           </div>
         </div>
@@ -89,7 +164,8 @@
           <div class="feature-image">
             <img
               src="Smartphone_Calendar.png"
-              alt="Screenshot showing Google Calendar integration with cycle tracking"
+              alt="Screenshot der Google Calendar Integration mit Zyklus-Tracking"
+              loading="lazy"
             />
           </div>
         </div>
@@ -108,19 +184,21 @@
           <div class="feature-image">
             <img
               src="app-screens-2.png"
-              alt="Screenshot showing cycle pattern analysis in the Seasons app"
+              alt="Screenshot der Zyklus-Muster-Analyse in der seasons App"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
 
-      <section class="team">
-        <h2>WER STECKT HINTER SEASONS?</h2>
+      <section class="team" aria-labelledby="team-title">
+        <h2 id="team-title">WER STECKT HINTER SEASONS?</h2>
         <div class="team-grid">
           <div class="team-member">
             <img
               src="gaby-jenni-lila.png"
-              alt="Portrait of Gaby Jenni, Co-Founder & UX Consultant"
+              alt="Portrait von Gaby Jenni, Co-Founder & UX Consultant"
+              loading="lazy"
             />
             <h3>Gaby</h3>
             <p>Co-Founder & UX Consultant</p>
@@ -135,7 +213,8 @@
           <div class="team-member">
             <img
               src="michelle-andrey.png"
-              alt="Portrait of Michelle Andrey, Co-Founder & UI Engineer"
+              alt="Portrait von Michelle Andrey, Co-Founder & UI Engineer"
+              loading="lazy"
             />
             <h3>Michelle</h3>
             <p>Co-Founder & UI Engineer</p>
@@ -151,14 +230,11 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="footer-content">
         <div class="footer-section">
           <h3>KONTAKT</h3>
           <address>
-            Gridonic AG<br />
-            Zentralstrasse 156<br />
-            8003 Zürich<br />
             <a
               href="mailto:getseasonsapp@gmail.com"
               aria-label="Schreibe uns eine E-Mail an getseasonsapp@gmail.com"
@@ -193,36 +269,24 @@
         <div class="footer-section">
           <h3>HAST DU NOCH FRAGEN?</h3>
           <a
-            href="/faq.html"
+            href="faq.html"
             class="faq-link"
-            target="_blank"
-            rel="noopener"
             aria-label="Häufig gestellte Fragen"
             >Hier gehts zu den FAQ's</a
           >
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2023 seasons. Made with ♥ by Gridonic.</p>
+        <p>© 2023 seasons.</p>
         <div class="footer-links">
-          <a
-            href="/datenschutz.html"
-            target="_blank"
-            rel="noopener"
-            aria-label="Zur Datenschutzerklärung"
+          <a href="datenschutz.html" aria-label="Zur Datenschutzerklärung"
             >Datenschutz</a
           >
-          <a
-            href="/impressum.html"
-            target="_blank"
-            rel="noopener"
-            aria-label="Zum Impressum"
-            >Impressum</a
-          >
+          <a href="impressum.html" aria-label="Zum Impressum">Impressum</a>
         </div>
       </div>
     </footer>
 
-    <script type="module" src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

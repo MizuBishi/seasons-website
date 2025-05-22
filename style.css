@@ -284,7 +284,6 @@ main > section {
   height: auto;
   object-fit: contain;
   border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .team {
@@ -320,7 +319,6 @@ main > section {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%;
   margin-bottom: 1.5rem;
 }
 
@@ -410,7 +408,16 @@ main > section {
 
 .footer .footer-links {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.footer .footer-links a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
